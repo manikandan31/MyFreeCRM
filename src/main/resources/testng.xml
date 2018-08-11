@@ -8,8 +8,8 @@
   <test thread-count="5" name="Test">
       <classes>
       <class name="com.crm.qa.Tests.LoginPageTest"/>
-      <class name="com.crm.qa.Tests.HomePageTest"/>
-      <class name="com.crm.qa.Tests.ContactsPageTest"/>
+      <!--class name="com.crm.qa.Tests.HomePageTest"/-->
+      <!--class name="com.crm.qa.Tests.ContactsPageTest"/-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
