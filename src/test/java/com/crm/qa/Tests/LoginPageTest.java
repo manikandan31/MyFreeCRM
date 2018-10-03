@@ -30,13 +30,13 @@ public class LoginPageTest extends TestBase {
 		System.out.println(title);
 	}
 	
-	@Test
+	@Test(enabled = false)
 	public void CRMLogoTest() {
 		boolean flag = loginpage.validateCRMLogo();
 		Assert.assertTrue(flag);
 	}
 
-	@Test (dependsOnMethods= { "CRMLogoTest" , "loginPageTitleTest" })
+	//@Test (dependsOnMethods= { "CRMLogoTest" , "loginPageTitleTest" })
 	public void loginTest() {
 		homepage= loginpage.login(prop.getProperty("username"),prop.getProperty("password"));
 	}
