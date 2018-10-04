@@ -1,25 +1,21 @@
 pipeline{
-agent any
+ agent any
+  stages{
 
-stages{
+    stage('compile'){
 
-stage('compile'){
-
-steps{
-
-sh  'mvn clean compile' 
-
-}
-}
-
-stage('Tesing stage'){
-
-steps{
-
-
-sh  'mvn clean test' 
-
-}
-}
-}
+      steps{
+         withMaven( maven: 'Maven_3.5.4'){
+            sh  'mvn clean compile' 
+            }
+           }
+    }
+    stage('Tesing stage'){
+      steps{
+         withMaven( maven: 'Maven_3.5.4'){
+            sh  'mvn clean compile' 
+            }
+           }
+     }
+   }
 }
