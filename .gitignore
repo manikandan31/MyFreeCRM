@@ -1,5 +1,5 @@
 /target/
 
-test-output/
-log4j.properties
-*.properties
+/test-output/
+/log4j.properties
+/*.properties
