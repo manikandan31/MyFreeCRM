@@ -10,14 +10,14 @@ pipeline{
 
       steps{
 
-            sh  'mvn clean compile' 
+            bat  'mvn clean compile' 
 
           }
     }
     stage('Tesing stage'){
       steps{
 
-            sh  'mvn clean test' 
+            bat  'mvn clean test' 
             
            }
      }
